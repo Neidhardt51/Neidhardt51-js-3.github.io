@@ -1,0 +1,31 @@
+<!--Halaman Page By Raditya Ghazy-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Style dan Konten</title>
+</head>
+
+<body>
+    <h1 id="my-heading">Selamat Datang!</h1>
+    <button onclick="ubahStyleDanKonten()">Klik untuk Mengubah</button>
+
+    <script>
+        function ubahStyleDanKonten() {
+            // Mengubah konten dari elemen dengan id "my-heading"
+            var heading = document.getElementById("my-heading");
+            heading.textContent = "Text dan Style Berubah!";
+
+            // Mengubah warna teks menjadi biru
+            heading.style.color = "blue";
+
+            // Mengubah warna latar belakang menjadi kuning
+            heading.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+
+</html>

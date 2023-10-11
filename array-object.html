@@ -1,0 +1,35 @@
+<!--Array Object By Raditya Ghazy-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+</head>
+
+<body>
+    <h1>Data Siswa</h1>
+    <ul id="student-list"></ul>
+
+    <script>
+        // Array of objects
+        var students = [
+            { id: 1, nama: "Indra", umur: 18, kelas: "XII-AK-3" },
+            { id: 2, nama: "Badri", umur: 17, kelas: "XI-RPL-2" },
+            { id: 3, nama: "Evi", umur: 19, kelas: "X-TKJ-1" },
+            { id: 4, nama: "Sri", umur: 18, kelas: "XI-AK-5" }
+        ];
+
+        // Menampilkan data siswa ke dalam list
+        var studentList = document.getElementById("student-list");
+        students.forEach(function(student) {
+            var listItem = document.createElement("li");
+            listItem.textContent = `ID: ${student.id}, Nama: ${student.nama}, Umur: ${student.umur}, Kelas: ${student.kelas}`;
+            studentList.appendChild(listItem);
+        });
+    </script>
+</body>
+
+</html>
